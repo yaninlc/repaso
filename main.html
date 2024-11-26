@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Principal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Bienvenido a la Página Principal</h1>
+        <div class="api-section">
+            <h2>Enviar Correo</h2>
+            <form id="emailForm">
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Mensaje:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+        <div class="api-section">
+            <h2>Ver Imágenes</h2>
+            <button id="loadImages">Cargar Imágenes</button>
+            <div id="imageContainer"></div>
+        </div>
+        <div class="api-section">
+            <h2>API de Broma Aleatoria</h2>
+            <button id="fetchJoke">Obtener Broma</button>
+            <p id="joke"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
